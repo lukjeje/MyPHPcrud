@@ -1,0 +1,206 @@
+body {
+    background-image: url('/imgs/wallppaer.jpg'); /* Replace with your image file */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Center the image */
+  
+    margin: 0;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  
+  html, body {
+      height: 100%; /* Full viewport height */
+      /* margin: 0;  Remove default margin */
+      overflow: hidden;
+  }
+  
+  #box {
+      max-width: 100%;   /* Fixed width */
+      max-height: 100vh; /* Limits the height to the viewport */
+      padding: 20px;
+      background-color: rgba(20, 46, 48, 0.829);
+      border-radius: 8px;
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.829);
+      text-align: center;
+      box-sizing: border-box;
+      overflow-y: auto; /* Allows internal scroll if content exceeds viewport */
+  }
+  
+  
+  
+  /* Text and input styles */
+  #box h2 {
+      margin-bottom: 20px; /* Space below heading */
+      color: white; /* Change text color for visibility */
+  }
+  
+  /* Form and input group styles */
+  form {
+      display: flex;
+      flex-direction: column; /* Stack inputs vertically */
+      justify-content: space-between; /* Space between items */
+      height: 80%; /* Use full height of the box */
+  }
+  
+  /* Styles for each input group */
+  .input-group {
+      display: flex; /* Use flexbox to align labels and inputs */
+      align-items: center; /* Center vertically */
+      margin: 10px 0; /* Space around input groups */
+  }
+  
+  /* Label styles */
+  label {
+      color: white; /* Label text color */
+      width: 80px; /* Fixed width for labels */
+  }
+  
+  /* Input field styles */
+  input[type="text"],
+  input[type="password"] {
+      padding: 10px;
+      margin-left: 10px; /* Space between label and input */
+      border: none; /* Remove default border */
+      border-radius: 5px; /* Rounded corners for inputs */
+      background-color: rgba(255, 255, 255, 0.8); /* Light background for inputs */
+      flex-grow: 1; /* Allow input to take remaining space */
+  }
+  
+
+
+
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Removes space between borders */
+    margin: 20px 0;
+  }
+
+
+  th {
+    background-color: rgba(18, 84, 122, 0.568); 
+    color: white;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+
+
+  tr:hover {
+    background-color: #7e7e7e88;
+  }
+  
+  tr, td {
+    color: white;
+  }
+
+
+
+  #addButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    background-color: #41a752c4;
+    position: relative;
+    top: -5px;
+  }
+  
+  #addButton:hover {
+    background-color: #2d9b3fc4;
+  }
+
+
+  #remButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    background-color: #bb1717c4;
+    position: relative;
+    top: -5px;
+  }
+
+  #remButton:hover {
+    background-color: #a51414c4;
+  }
+
+
+  #back {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    background-color: #1d568bc4;
+    position: relative;
+    top: -5px;
+  }
+  
+  #back:hover {
+    background-color: #0e3e6bc4;
+  
+  }
+
+
+
+
+
+  /* Media Query for Phones */
+  @media (max-width: 480px) {
+      #box {
+          width: 100%; /* Use a percentage width for smaller screens */
+          height: auto; /* Adjust height automatically based on content */
+          padding: 10px; /* Reduced padding */
+      }
+  
+      #box h2 {
+          font-size: 1.5em; /* Adjust font size for heading */
+      }
+  
+      .input-group {
+          flex-direction: column; /* Stack labels and inputs vertically */
+          align-items: flex-start; /* Align items to the start */
+      }
+  
+      label {
+          width: auto; /* Remove fixed width for labels */
+          margin-bottom: 5px; /* Space below labels */
+      }
+  
+      input[type="text"] {
+          width: 90%;
+      }
+  
+      input[type="password"]{
+          width: 90%;
+      }
+      
+      button {
+          width: 100%; /* Full width for inputs and buttons */
+          font-size: 1em; /* Adjust font size for better readability */
+      }
+      
+      body, html {
+          height: 100%;
+          background-size: auto;
+          background-position: center;
+      }
+    
+  }
